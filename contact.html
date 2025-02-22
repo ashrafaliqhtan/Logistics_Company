@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Swift Shift Internal Logistics Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #0044cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('contact-hero.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        .contact-form {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .form-container, .contact-info {
+            width: 48%;
+        }
+
+        .form-container form {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form button {
+            background: #0044cc;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #0033a0;
+        }
+
+        .contact-info {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3 {
+            color: #333;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        .contact-info p i {
+            margin-right: 10px;
+        }
+
+        footer {
+            background: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .form-container, .contact-info {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="vehicles.html">Our Vehicles</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>We are here to help you with your logistics needs. Contact us today!</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <!-- Contact Form Section -->
+                <div class="form-container">
+                    <form action="submit_form.php" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information Section -->
+                <div class="contact-info">
+                    <h3>Our Contact Information</h3>
+                    <p><i class="fas fa-phone"></i> Phone: +123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> Email: info@swiftshiftlogistics.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: 123 Logistics Road, Cityville, USA</p>
+                    <h3>Business Hours</h3>
+                    <p><i class="fas fa-clock"></i> Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p><i class="fas fa-clock"></i> Saturday: 9:00 AM - 4:00 PM</p>
+                    <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Swift Shift Internal Logistics Company. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Include FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

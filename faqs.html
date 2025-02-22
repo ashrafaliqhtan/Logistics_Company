@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Swift Shift Internal Logistics Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #0044cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffa500; /* Change color on hover */
+        }
+
+        .hero {
+            background: url('faq-hero.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        .faq-section {
+            margin: 40px 0;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .faq-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s;
+        }
+
+        .faq-container:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .faq-container h3 {
+            background: #0044cc;
+            color: white;
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .faq-container p {
+            display: none;
+            padding: 10px;
+            margin: 0;
+            border-top: 1px solid #ddd;
+        }
+
+        footer {
+            background: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+
+        .footer-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ffa500; /* Change color on hover */
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            .faq-container h3 {
+                font-size: 18px;
+            }
+
+            .faq-container p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="vehicles.html">Our Vehicles</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>We’re here to answer your questions</h2>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-container">
+                <h3 tabindex="0">What types of vehicles do you offer for transportation?</h3>
+                <p>We offer a wide variety of vehicles including trucks, vans, and specialized vehicles to accommodate different logistical needs.</p>
+            </div>
+
+            <div class="faq-container">
+                <h3 tabindex="0">What areas do you serve?</h3>
+                <p>We serve cities across the entire country, providing both local and long-distance transportation services for businesses.</p>
+            </div>
+
+            <div class="faq-container">
+                <h3 tabindex="0">How can I request a quote for my transportation needs?</h3>
+                <p>You can easily request a quote by visiting our pricing page or contacting us directly through the contact form.</p>
+            </div>
+
+            <div class="faq-container">
+                <h3 tabindex="0">What payment methods do you accept?</h3>
+                <p>We accept a variety of payment methods, including credit cards, bank transfers, and online payment gateways such as PayPal.</p>
+            </div>
+
+            <div class="faq-container">
+                <h3 tabindex="0">Do you offer tracking for my shipments?</h3>
+                <p>Yes, we offer real-time tracking for all shipments. You will receive a tracking number once your shipment is dispatched.</p>
+            </div>
+
+            <div class="faq-container">
+                <h3 tabindex="0">Can I reschedule or cancel a transportation request?</h3>
+                <p>Yes, you can reschedule or cancel a request, but please do so at least 24 hours in advance to avoid any fees.</p>
+            </div>
+
+            <div class="faq-container">
+                <h3 tabindex="0">What should I do if my shipment is delayed?</h3>
+                <p>If your shipment is delayed, please contact our customer service immediately for assistance. We will keep you updated on the status of your shipment.</p>
+            </div>
+
+            <div class="faq-container">
+                <h3 tabindex="0">Are your services insured?</h3>
+                <p>Yes, all our services are insured to ensure that your goods are protected throughout the transportation process.</p>
+            </div>
+
+            <div class="faq-container">
+                <h3 tabindex="0">Do you provide international shipping?</h3>
+                <p>Currently, we specialize in domestic transportation services. However, we are expanding our services to include international shipping in the near future.</p>
+            </div>
+
+            <div class="faq-container">
+                <h3 tabindex="0">How can I contact customer support?</h3>
+                <p>You can contact customer support through our contact page, or by calling our dedicated helpline available 24/7.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Swift Shift Internal Logistics Company. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Add event listeners for each FAQ question
+        document.querySelectorAll('.faq-container h3').forEach(faq => {
+            faq.addEventListener('click', () => {
+                const answer = faq.nextElementSibling;
+                answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+
+        // Accessibility feature: allow keyboard navigation
+        document.querySelectorAll('.faq-container h3').forEach(faq => {
+            faq.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    faq.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

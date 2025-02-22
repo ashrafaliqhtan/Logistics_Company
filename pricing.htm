@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Swift Shift Internal Logistics Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #0044cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('pricing-hero.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .pricing-plan {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-plan:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-plan h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 40px;
+            color: #0044cc;
+            margin: 20px 0;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .features li:last-child {
+            border-bottom: none;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0044cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-plan {
+                width: 90%;
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Pricing Plans</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="vehicles.html">Our Vehicles</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Choose the Right Plan for Your Business</h2>
+            <p>Affordable and transparent pricing for all your logistics needs.</p>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2>Our Pricing Plans</h2>
+            <div class="pricing-table">
+                <div class="pricing-plan">
+                    <h2>Basic Plan</h2>
+                    <div class="price">SAR 500</div>
+                    <ul class="features">
+                        <li>Up to 5 deliveries per week</li>
+                        <li>Access to standard vehicles</li>
+                        <li>Email support</li>
+                        <li>Delivery tracking</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Get Started</a>
+                </div>
+                <div class="pricing-plan">
+                    <h2>Standard Plan</h2>
+                    <div class="price">SAR 1000</div>
+                    <ul class="features">
+                        <li>Up to 10 deliveries per week</li>
+                        <li>Access to premium vehicles</li>
+                        <li>Priority support</li>
+                        <li>Real-time tracking and alerts</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Get Started</a>
+                </div>
+                <div class="pricing-plan">
+                    <h2>Premium Plan</h2>
+                    <div class="price">SAR 2000</div>
+                    <ul class="features">
+                        <li>Unlimited deliveries</li>
+                        <li>Dedicated account manager</li>
+                        <li>24/7 customer support</li>
+                        <li>Real-time tracking and analytics</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Swift Shift Internal Logistics Company. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

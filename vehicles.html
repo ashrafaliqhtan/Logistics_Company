@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Vehicles - Swift Shift Internal Logistics Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Swift Shift Internal Logistics Company</h1>
+            <p>Your reliable partner in internal logistics.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="vehicles.html">Our Vehicles</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Our Fleet of Vehicles</h2>
+            <p>Explore our diverse range of vehicles designed to meet your logistics needs.</p>
+        </div>
+    </section>
+
+    <section class="vehicles-gallery">
+        <div class="container">
+            <h2>Vehicle Types</h2>
+            <div class="gallery">
+                <img src="Image4.jpg" alt="Truck Type 1">
+                <img src="Image5.jpeg" alt="Truck Type 2">
+                <img src="van1.jpg" alt="Van Type 1">
+                <img src="van2.jpg" alt="Van Type 2">
+                <img src="trailer1.jpg" alt="Trailer Type 1">
+                <img src="pickup1.jpg" alt="Pickup Type 1">
+                <img src="specialized1.jpg" alt="Specialized Vehicle Type 1">
+                <img src="specialized2.jpg" alt="Specialized Vehicle Type 2">
+            </div>
+        </div>
+    </section>
+
+    <section class="services-overview">
+        <div class="container">
+            <h2>Our Services</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service Type</th>
+                        <th>Price ($)</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Furniture Transportation</td>
+                        <td>150</td>
+                        <td>Safe transportation of all types of furniture.</td>
+                    </tr>
+                    <tr>
+                        <td>Electrical Appliances Delivery</td>
+                        <td>100</td>
+                        <td>Handling and delivery of electrical appliances with care.</td>
+                    </tr>
+                    <tr>
+                        <td>Vehicle Transportation</td>
+                        <td>200</td>
+                        <td>Transporting vehicles across cities safely.</td>
+                    </tr>
+                    <tr>
+                        <td>Long-Distance Transportation</td>
+                        <td>300</td>
+                        <td>Long-distance logistics solutions for your needs.</td>
+                    </tr>
+                    <tr>
+                        <td>Specialized Cargo Handling</td>
+                        <td>250</td>
+                        <td>Transportation of delicate or specialized cargo.</td>
+                    </tr>
+                    <tr>
+                        <td>Heavy Equipment Transport</td>
+                        <td>400</td>
+                        <td>Transporting heavy machinery and equipment.</td>
+                    </tr>
+                    <tr>
+                        <td>Event Logistics</td>
+                        <td>350</td>
+                        <td>Comprehensive logistics solutions for events.</td>
+                    </tr>
+                    <tr>
+                        <td>Storage Solutions</td>
+                        <td>75</td>
+                        <td>Safe and secure storage for your items.</td>
+                    </tr>
+                    <tr>
+                        <td>Cross-Docking Services</td>
+                        <td>120</td>
+                        <td>Efficient transfer of goods from one vehicle to another.</td>
+                    </tr>
+                    <tr>
+                        <td>Last-Mile Delivery</td>
+                        <td>90</td>
+                        <td>Fast and reliable last-mile delivery service.</td>
+                    </tr>
+                    <tr>
+                        <td>Supply Chain Management</td>
+                        <td>500</td>
+                        <td>Comprehensive supply chain management solutions.</td>
+                    </tr>
+                    <tr>
+                        <td>Import/Export Services</td>
+                        <td>600</td>
+                        <td>Handling of import and export logistics.</td>
+                    </tr>
+                    <tr>
+                        <td>Customs Clearance</td>
+                        <td>200</td>
+                        <td>Facilitating customs clearance for your goods.</td>
+                    </tr>
+                    <tr>
+                        <td>Online Tracking</td>
+                        <td>Free</td>
+                        <td>Real-time tracking of your shipments.</td>
+                    </tr>
+                    <tr>
+                        <td>Package Consolidation</td>
+                        <td>80</td>
+                        <td>Consolidating packages for cost-effective shipping.</td>
+                    </tr>
+                    <tr>
+                        <td>Insurance Services</td>
+                        <td>50</td>
+                        <td>Insurance options for your valuable shipments.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="analytics">
+        <div class="container">
+            <h2>Service Usage Analytics</h2>
+            <canvas id="serviceUsageChart" width="400" height="200"></canvas>
+            <script>
+                const ctx = document.getElementById('serviceUsageChart').getContext('2d');
+                const serviceUsageChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: ['Furniture Transport', 'Electrical Appliances', 'Vehicle Transport', 'Long-Distance', 'Specialized Handling', 'Heavy Equipment'],
+                        datasets: [{
+                            label: 'Service Usage',
+                            data: [12, 15, 7, 8, 5, 10],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.6)',
+                                'rgba(54, 162, 235, 0.6)',
+                                'rgba(255, 206, 86, 0.6)',
+                                'rgba(75, 192, 192, 0.6)',
+                                'rgba(153, 102, 255, 0.6)',
+                                'rgba(255, 159, 64, 0.6)'
+                            ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                        }
+                    }
+                });
+            </script>
+        </div>
+    </section>
+
+    <section class="locations">
+        <div class="container">
+            <h2>Transportation Locations</h2>
+            <div id="map" style="width: 100%; height: 500px;"></div>
+            <script>
+                function initMap() {
+                    const locations = [
+                        { lat: 24.7136, lng: 46.6753, title: "Riyadh" },
+                        { lat: 21.4225, lng: 39.8262, title: "Jeddah" },
+                        { lat: 26.4207, lng: 50.0888, title: "Dammam" },
+                        { lat: 27.0194, lng: 49.2067, title: "Al Khobar" },
+                        { lat: 25.4232, lng: 45.8258, title: "Abha" },
+                        { lat: 28.3852, lng: 40.2075, title: "Tabuk" },
+                        { lat: 25.1370, lng: 46.8523, title: "Khamis Mushait" },
+                        { lat: 24.5082, lng: 39.6104, title: "Medina" },
+                        { lat: 19.6120, lng: 42.8361, title: "Yanbu" },
+                        { lat: 21.0287, lng: 40.5098, title: "Hafar Al-Batin" },
+                        { lat: 24.7135, lng: 46.6753, title: "Al Qassim" },
+                        { lat: 27.1957, lng: 49.6633, title: "Al Hofuf" },
+                        { lat: 26.8805, lng: 45.0075, title: "Al Jumum" },
+                        { lat: 25.7461, lng: 42.7481, title: "Al Ahsa" },
+                        { lat: 22.7335, lng: 41.1390, title: "Taif" },
+                        { lat: 29.4152, lng: 36.5336, title: "Abha" }
+                    ];
+
+                    const map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 5,
+                        center: { lat: 24.7136, lng: 46.6753 },
+                    });
+
+                    locations.forEach(location => {
+                        new google.maps.Marker({
+                            position: { lat: location.lat, lng: location.lng },
+                            map,
+                            title: location.title,
+                        });
+                    });
+                }
+                window.onload = initMap;
+            </script>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Swift Shift Internal Logistics Company. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

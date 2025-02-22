@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Swift Shift</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffe600;
+}
+
+/* Section Styling */
+h2 {
+    color: #0056b3;
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 1.8em;
+}
+
+/* Products Section */
+#products .product-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#products .product {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: calc(50% - 20px);
+    transition: transform 0.3s;
+}
+
+#products .product:hover {
+    transform: scale(1.05);
+}
+
+#products .product h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#products .product p {
+    color: #555;
+}
+
+/* Cart Request Form */
+#cart-request form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#cart-request label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+#cart-request input[type="text"],
+#cart-request input[type="date"],
+#cart-request select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#cart-request button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#cart-request button:hover {
+    background-color: #004094;
+}
+
+/* Price Display */
+#price-display {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+}
+
+#testimonials .testimonial-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#testimonials .testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#testimonials .testimonial p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#testimonials .testimonial span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* FAQ Section */
+#faq .faq-item {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#faq .faq-item h3 {
+    font-size: 1.2em;
+    color: #0056b3;
+    margin-bottom: 5px;
+}
+
+#faq .faq-item p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #ffe600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #products .product,
+    #testimonials .testimonial {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #cart-request form {
+        padding: 10px;
+    }
+}
+  
+      
+      
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Swift Shift Internal Logistics Company</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Products Section -->
+        <section id="products">
+            <div class="container">
+                <h2>Our Products</h2>
+                <div class="product-box">
+                    <div class="product">
+                        <h3>Large Carts</h3>
+                        <p>Ideal for transporting large items efficiently.</p>
+                    </div>
+                    <div class="product">
+                        <h3>Carts for Electrical Devices</h3>
+                        <p>Specially designed to carry electrical devices safely.</p>
+                    </div>
+                    <div class="product">
+                        <h3>Carts for Furniture</h3>
+                        <p>Perfect for moving furniture without hassle.</p>
+                    </div>
+                    <div class="product">
+                        <h3>Carts for Vehicles</h3>
+                        <p>Specialized carts designed for transporting vehicles effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Request Form Section -->
+        <section id="cart-request">
+            <div class="container">
+                <h2>Request a Cart</h2>
+                <form id="request-form">
+                    <label for="cart-type">Select Cart Type:</label>
+                    <select id="cart-type" required>
+                        <option value="">--Select Cart Type--</option>
+                        <option value="large">Large Cart</option>
+                        <option value="electrical">Cart for Electrical Devices</option>
+                        <option value="furniture">Cart for Furniture</option>
+                        <option value="vehicle">Cart for Vehicles</option>
+                    </select>
+
+                    <label for="location">Specify Location:</label>
+                    <input type="text" id="location" required placeholder="Enter delivery location">
+
+                    <label for="date">Choose Date:</label>
+                    <input type="date" id="date" required>
+
+                    <button type="button" onclick="calculatePrice()">Calculate Price</button>
+                </form>
+                <div id="price-display" style="margin-top: 20px;"></div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-box">
+                    <div class="testimonial">
+                        <p>"Swift Shift's cart services have streamlined our internal logistics immensely!"</p>
+                        <span>- Alex from ABC Corp.</span>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Their carts for furniture saved us hours on office moves. Reliable and efficient!"</p>
+                        <span>- Sarah from XYZ Ltd.</span>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Highly recommend Swift Shift for vehicle transport needs. The carts are top-notch."</p>
+                        <span>- Mike from DEF Motors</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>What types of carts do you offer?</h3>
+                    <p>We offer carts for large items, electrical devices, furniture, and even vehicles.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I request a cart for same-day delivery?</h3>
+                    <p>Yes, we offer same-day delivery options based on availability and location.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are there additional charges for packaging?</h3>
+                    <p>Yes, we include a standard $10 packaging fee in the total cost.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Swift Shift Internal Logistics Company. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- JavaScript Code -->
+    <script>
+        function calculatePrice() {
+            const cartType = document.getElementById('cart-type').value;
+            const packagingPrice = 10; // Packaging cost
+            let price = 0;
+
+            // Set base price based on cart type
+            switch(cartType) {
+                case 'large':
+                    price = 50;
+                    break;
+                case 'electrical':
+                    price = 30;
+                    break;
+                case 'furniture':
+                    price = 40;
+                    break;
+                case 'vehicle':
+                    price = 70;
+                    break;
+                default:
+                    price = 0;
+                    break;
+            }
+
+            // Calculate total price
+            const totalPrice = price + packagingPrice;
+
+            // Display result
+            if (cartType) {
+                document.getElementById('price-display').innerText = `Total Price (including packaging): $${totalPrice}`;
+            } else {
+                document.getElementById('price-display').innerText = '';
+            }
+        }
+    </script>
+</body>
+</html>

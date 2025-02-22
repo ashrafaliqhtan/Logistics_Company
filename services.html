@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Swift Shift Internal Logistics Company</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=r88EUHbWw3XehvBq6"></script>
+    <script>
+        function initMap() {
+            // Initialize Google Map
+            const map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 24.7136, lng: 46.6753 }, // Center on Riyadh
+                zoom: 6,
+            });
+
+            // Marker locations
+            const locations = [
+                { name: "Riyadh", lat: 24.7136, lng: 46.6753 },
+                { name: "Jeddah", lat: 21.2854, lng: 157.5014 },
+                // Add other stations here
+                { name: "Dammam", lat: 26.4207, lng: 49.8951 },
+                { name: "Khobar", lat: 26.2952, lng: 50.1971 },
+                { name: "Abha", lat: 18.2235, lng: 42.5051 },
+                { name: "Medina", lat: 24.4686, lng: 39.6142 },
+                { name: "Mecca", lat: 21.4225, lng: 39.8262 },
+                { name: "Najran", lat: 17.5581, lng: 44.1252 },
+                { name: "Hail", lat: 27.5112, lng: 41.6935 },
+                { name: "Tabuk", lat: 28.3832, lng: 36.5855 },
+                { name: "Qassim", lat: 26.3287, lng: 43.9765 },
+                { name: "Jizan", lat: 16.8938, lng: 42.5523 },
+                { name: "Buraidah", lat: 26.3287, lng: 43.9765 },
+                { name: "Khamis Mushait", lat: 18.3085, lng: 42.7561 },
+                { name: "Yanbu", lat: 24.0634, lng: 38.1923 },
+                { name: "Al Bahah", lat: 20.0195, lng: 41.4674 },
+                { name: "Al Khobar", lat: 26.2905, lng: 50.1997 },
+                { name: "Al Jubail", lat: 27.0122, lng: 49.6442 },
+                { name: "Al Qunfudhah", lat: 20.6020, lng: 40.0772 },
+                { name: "Al Majma'ah", lat: 25.1862, lng: 45.4530 },
+                { name: "Al Khobar", lat: 26.2905, lng: 50.1997 },
+            ];
+
+            locations.forEach(location => {
+                new google.maps.Marker({
+                    position: { lat: location.lat, lng: location.lng },
+                    map: map,
+                    title: location.name,
+                });
+            });
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Swift Shift Internal Logistics Company</h1>
+            <p>Your reliable partner in internal logistics.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="vehicles.html">Our Vehicles</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Explore our diverse range of logistics services tailored to your needs.</p>
+        </div>
+    </section>
+
+    <section class="services-overview">
+        <div class="container">
+            <h2>Comprehensive Logistics Services</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service Type</th>
+                        <th>Price ($)</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Furniture Transportation</td>
+                        <td>150</td>
+                        <td>Safe and efficient transportation of all types of furniture.</td>
+                    </tr>
+                    <tr>
+                        <td>Electrical Appliances Delivery</td>
+                        <td>100</td>
+                        <td>Handling and delivery of electrical appliances with care.</td>
+                    </tr>
+                    <tr>
+                        <td>Vehicle Transportation</td>
+                        <td>200</td>
+                        <td>Transporting vehicles across cities safely and securely.</td>
+                    </tr>
+                    <tr>
+                        <td>Long-Distance Transportation</td>
+                        <td>300</td>
+                        <td>Long-distance logistics solutions tailored for your needs.</td>
+                    </tr>
+                    <tr>
+                        <td>Specialized Cargo Handling</td>
+                        <td>250</td>
+                        <td>Transportation of delicate or specialized cargo with utmost care.</td>
+                    </tr>
+                    <tr>
+                        <td>Heavy Equipment Transport</td>
+                        <td>400</td>
+                        <td>Reliable transport of heavy machinery and equipment.</td>
+                    </tr>
+                    <tr>
+                        <td>Event Logistics</td>
+                        <td>350</td>
+                        <td>Comprehensive logistics solutions for all your event needs.</td>
+                    </tr>
+                    <tr>
+                        <td>Storage Solutions</td>
+                        <td>75</td>
+                        <td>Safe and secure storage options for your valuable items.</td>
+                    </tr>
+                    <tr>
+                        <td>Cross-Docking Services</td>
+                        <td>120</td>
+                        <td>Efficient transfer of goods from one vehicle to another.</td>
+                    </tr>
+                    <tr>
+                        <td>Last-Mile Delivery</td>
+                        <td>90</td>
+                        <td>Fast and reliable last-mile delivery service to your doorstep.</td>
+                    </tr>
+                    <tr>
+                        <td>Supply Chain Management</td>
+                        <td>500</td>
+                        <td>Comprehensive management of your supply chain logistics.</td>
+                    </tr>
+                    <tr>
+                        <td>Import/Export Services</td>
+                        <td>600</td>
+                        <td>Expert handling of import and export logistics.</td>
+                    </tr>
+                    <tr>
+                        <td>Customs Clearance</td>
+                        <td>200</td>
+                        <td>Facilitating customs clearance for your shipments.</td>
+                    </tr>
+                    <tr>
+                        <td>Online Tracking</td>
+                        <td>Free</td>
+                        <td>Real-time tracking of your shipments for peace of mind.</td>
+                    </tr>
+                    <tr>
+                        <td>Package Consolidation</td>
+                        <td>80</td>
+                        <td>Consolidating packages for more cost-effective shipping.</td>
+                    </tr>
+                    <tr>
+                        <td>Insurance Services</td>
+                        <td>50</td>
+                        <td>Insurance options to protect your valuable shipments.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="analytics">
+        <div class="container">
+            <h2>Service Usage Analytics</h2>
+            <canvas id="serviceUsageChart" width="400" height="200"></canvas>
+            <script>
+                const ctx = document.getElementById('serviceUsageChart').getContext('2d');
+                const serviceUsageChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Furniture Transport', 'Electrical Appliances', 'Vehicle Transport', 'Long-Distance', 'Specialized Handling', 'Heavy Equipment'],
+                        datasets: [{
+                            label: 'Number of Requests',
+                            data: [120, 80, 90, 70, 60, 50],
+                            backgroundColor: 'rgba(75, 192, 192, 0.6)'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
+        </div>
+    </section>
+
+    <section class="locations">
+        <div class="container">
+            <h2>Transportation Locations</h2>
+            <div id="map" style="width: 100%; height: 500px;"></div>
+            <script>
+                function initMap() {
+                    const locations = [
+                        { lat: 24.7136, lng: 46.6753, title: "Riyadh" },
+                        { lat: 21.4225, lng: 39.8262, title: "Jeddah" },
+                        { lat: 26.4207, lng: 50.0888, title: "Dammam" },
+                        { lat: 27.0194, lng: 49.2067, title: "Al Khobar" },
+                        { lat: 25.4232, lng: 45.8258, title: "Abha" },
+                        { lat: 28.3852, lng: 40.2075, title: "Tabuk" },
+                        { lat: 25.1370, lng: 46.8523, title: "Khamis Mushait" },
+                        { lat: 24.5082, lng: 39.6104, title: "Medina" },
+                        { lat: 19.6120, lng: 42.8361, title: "Yanbu" },
+                        { lat: 21.0287, lng: 40.5098, title: "Hafar Al-Batin" },
+                        { lat: 24.7135, lng: 46.6753, title: "Al Qassim" },
+                        { lat: 27.1957, lng: 49.6633, title: "Al Hofuf" },
+                        { lat: 26.8805, lng: 45.0075, title: "Al Jumum" },
+                        { lat: 25.7461, lng: 42.7481, title: "Al Ahsa" },
+                        { lat: 22.7335, lng: 41.1390, title: "Taif" },
+                        { lat: 29.4152, lng: 36.5336, title: "Abha" }
+                    ];
+
+                    const map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 5,
+                        center: { lat: 24.7136, lng: 46.6753 },
+                    });
+
+                    locations.forEach(location => {
+                        new google.maps.Marker({
+                            position: { lat: location.lat, lng: location.lng },
+                            map,
+                            title: location.title,
+                        });
+                    });
+                }
+                window.onload = initMap;
+            </script>
+        </div>
+    </section>
+
+    <section class="images">
+        <div class="container">
+            <h2>Service Images</h2>
+            <div class="image-gallery">
+                <img src="service1.webp" alt="Furniture Transportation">
+                <img src="service2.webp" alt="Electrical Appliances Delivery">
+                <img src="service1.webp" alt="Vehicle Transportation">
+                <img src="service2.webp" alt="Heavy Equipment Transport">
+                <img src="service1.webp" alt="Event Logistics">
+                <img src="service2.webp" alt="Cross-Docking Services">
+                <img src="service2.webp" alt="Last-Mile Delivery">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hero">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Discover our transportation services that cater to your needs.</p>
+        </div>
+    </section>
+
+    <section class="services-overview">
+        <div class="container">
+            <h2>Services Overview</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Furniture Transportation</td>
+                        <td>Safe and efficient moving of furniture.</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Electrical Appliances Delivery</td>
+                        <td>Delivery of home appliances to your doorstep.</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Vehicle Transportation</td>
+                        <td>Transportation of vehicles within the kingdom.</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Heavy Equipment Transport</td>
+                        <td>Moving heavy machinery and equipment.</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Event Logistics</td>
+                        <td>Logistics support for events and exhibitions.</td>
+                        <td>$250</td>
+                    </tr>
+                    <tr>
+                        <td>Cross-Docking Services</td>
+                        <td>Streamlined shipping and receiving processes.</td>
+                        <td>$180</td>
+                    </tr>
+                    <tr>
+                        <td>Last-Mile Delivery</td>
+                        <td>Final delivery from local distribution centers.</td>
+                        <td>$80</td>
+                    </tr>
+                    <tr>
+                        <td>Cold Storage Transport</td>
+                        <td>Temperature-controlled transport for perishables.</td>
+                        <td>$220</td>
+                    </tr>
+                    <tr>
+                        <td>Hazardous Materials Transport</td>
+                        <td>Safe transport of hazardous materials.</td>
+                        <td>$400</td>
+                    </tr>
+                    <tr>
+                        <td>Package Delivery</td>
+                        <td>Fast package delivery services across the kingdom.</td>
+                        <td>$60</td>
+                    </tr>
+                    <tr>
+                        <td>Office Relocation</td>
+                        <td>Comprehensive office moving services.</td>
+                        <td>$350</td>
+                    </tr>
+                    <tr>
+                        <td>Pet Transport</td>
+                        <td>Safe transport of pets during relocations.</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Personal Effects Shipping</td>
+                        <td>Shipping of personal belongings and effects.</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Bulk Freight Shipping</td>
+                        <td>Cost-effective bulk freight services.</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>Secure Document Delivery</td>
+                        <td>Delivery of sensitive documents securely.</td>
+                        <td>$75</td>
+                    </tr>
+                    <tr>
+                        <td>Express Delivery Services</td>
+                        <td>Priority services for urgent shipments.</td>
+                        <td>$120</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="analytics">
+        <div class="container">
+            <h2>Service Requests Analytics</h2>
+            <!-- Placeholder for Chart.js or similar library -->
+            <canvas id="serviceChart" width="400" height="200"></canvas>
+            <script>
+                // Placeholder for chart data (replace with actual data)
+                const ctx = document.getElementById('serviceChart').getContext('2d');
+                const serviceChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Furniture Transport', 'Appliances Delivery', 'Vehicle Transport', 'Heavy Equipment', 'Event Logistics'],
+                        datasets: [{
+                            label: 'Requests',
+                            data: [12, 19, 3, 5, 2],
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
+        </div>
+    </section>
+
+    <section class="locations">
+        <div class="container">
+            <h2>Transportation Locations</h2>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <section class="destination-selection">
+        <div class="container">
+            <h2>Select Your Destination</h2>
+            <form id="destinationForm">
+                <label for="departure">Departure Station:</label>
+                <select id="departure" name="departure" required>
+                    <option value="Riyadh">Riyadh</option>
+                    <option value="Jeddah">Jeddah</option>
+                    <option value="Dammam">Dammam</option>
+                    <option value="Khobar">Khobar</option>
+                    <option value="Abha">Abha</option>
+                    <option value="Medina">Medina</option>
+                    <option value="Mecca">Mecca</option>
+                    <option value="Najran">Najran</option>
+                    <option value="Hail">Hail</option>
+                    <option value="Tabuk">Tabuk</option>
+                    <option value="Qassim">Qassim</option>
+                    <option value="Jizan">Jizan</option>
+                    <option value="Buraidah">Buraidah</option>
+                    <option value="Khamis Mushait">Khamis Mushait</option>
+                    <option value="Yanbu">Yanbu</option>
+                    <option value="Al Bahah">Al Bahah</option>
+                    <option value="Al Jubail">Al Jubail</option>
+                    <option value="Al Qunfudhah">Al Qunfudhah</option>
+                    <option value="Al Majma'ah">Al Majma'ah</option>
+                </select>
+
+                <label for="destination">Destination Station:</label>
+                <select id="destination" name="destination" required>
+                    <option value="Jeddah">Jeddah</option>
+                    <option value="Dammam">Dammam</option>
+                    <option value="Khobar">Khobar</option>
+                    <option value="Abha">Abha</option>
+                    <option value="Medina">Medina</option>
+                    <option value="Mecca">Mecca</option>
+                    <option value="Najran">Najran</option>
+                    <option value="Hail">Hail</option>
+                    <option value="Tabuk">Tabuk</option>
+                    <option value="Qassim">Qassim</option>
+                    <option value="Jizan">Jizan</option>
+                    <option value="Buraidah">Buraidah</option>
+                    <option value="Khamis Mushait">Khamis Mushait</option>
+                    <option value="Yanbu">Yanbu</option>
+                    <option value="Al Bahah">Al Bahah</option>
+                    <option value="Al Jubail">Al Jubail</option>
+                    <option value="Al Qunfudhah">Al Qunfudhah</option>
+                    <option value="Al Majma'ah">Al Majma'ah</option>
+                </select>
+
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pickupDate">Pickup Date:</label>
+                <input type="date" id="pickupDate" name="pickupDate" required>
+
+                <label for="numOfPassengers">Number of Passengers:</label>
+                <input type="number" id="numOfPassengers" name="numOfPassengers" required>
+
+                <label for="additionalRequests">Additional Requests:</label>
+                <textarea id="additionalRequests" name="additionalRequests" rows="4"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="images">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="image-gallery">
+                <img src="Image1.jpg" alt="Service Image 1">
+                <img src="Image2.jpg" alt="Service Image 2">
+                <img src="Image3.jpeg" alt="Service Image 3">
+                <img src="Image4.jpg" alt="Service Image 4">
+                <img src="Image5.jpeg" alt="Service Image 5">
+                <img src="Image6.jpg" alt="Service Image 6">
+                <img src="Image2.jpg" alt="Service Image 7">
+                <img src="Image5.jpeg" alt="Service Image 8">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Swift Shift Internal Logistics Company. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

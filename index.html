@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Shift Internal Logistics Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+    @media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    
+    .gallery img {
+        width: calc(50% - 10px);
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .hero {
+        height: 200px;
+    }
+    
+    .cta-button {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        width: calc(100% - 10px);
+    }
+    
+    .hero {
+        height: 150px;
+    }
+    
+    .cta-button {
+        padding: 5px 10px;
+    }
+}
+
+    
+    
+    
+    /* Adding fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-in-out;
+    opacity: 1;
+}
+
+/* Delay the animations for each section */
+.hero {
+    animation-delay: 0.2s;
+}
+
+.services-overview {
+    animation-delay: 0.4s;
+}
+
+.analytics {
+    animation-delay: 0.6s;
+}
+
+.customer-testimonials {
+    animation-delay: 0.8s;
+}
+
+header {
+    background: #0044cc;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff5733;
+}
+    
+    
+      body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #0044cc;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.cta-button {
+    background: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.service-item {
+    margin: 20px 0;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+}
+
+.analytics {
+    margin: 40px 0;
+}
+
+.testimonials blockquote {
+    background: #f4f4f4;
+    padding: 10px;
+    border-left: 5px solid #0044cc;
+    margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: calc(33.333% - 10px);
+    margin: 5px;
+}
+
+.contact-info {
+    margin: 40px 0;
+}
+
+footer {
+    background: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+      
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Swift Shift Internal Logistics Company</h1>
+            <p>Your reliable partner in internal logistics.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="vehicles.html">Our Vehicles</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Swift Shift</h2>
+            <p>Providing top-notch internal logistics services across Saudi Arabia.</p>
+            <a href="contact.html" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="services-overview">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>Transportation of Furniture</h3>
+                <img src="Image4.jpg" alt="Furniture Transportation">
+                <p>Safe and efficient transportation of your valuable furniture.</p>
+            </div>
+            <div class="service-item">
+                <h3>Delivery of Electrical Appliances</h3>
+                <img src="Image5.jpeg" alt="Electrical Appliances Delivery">
+                <p>Expert handling of electrical appliances for safe delivery.</p>
+            </div>
+            <div class="service-item">
+                <h3>Vehicle Transportation</h3>
+                <img src="Image6.jpg" alt="Vehicle Transportation">
+                <p>Reliable transportation for all types of vehicles.</p>
+            </div>
+            <div class="service-item">
+                <h3>Long-Distance Transportation</h3>
+                <img src="car4.jpg" alt="Long-Distance Transportation">
+                <p>Long-distance transportation services to reach your destination.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="analytics">
+        <div class="container">
+            <h2>Company Analytics</h2>
+            <canvas id="serviceChart" width="400" height="200"></canvas>
+            <script>
+                const ctx = document.getElementById('serviceChart').getContext('2d');
+                const serviceChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Furniture Transport', 'Electrical Appliances', 'Vehicle Transport', 'Long-Distance Transport'],
+                        datasets: [{
+                            label: 'Number of Services',
+                            data: [12, 19, 7, 14],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
+        </div>
+ <section class="analytics">
+    <div class="container">
+        <h2>Customer Satisfaction</h2>
+        <canvas id="satisfactionChart" width="400" height="200"></canvas>
+        <script>
+            const satisfactionCtx = document.getElementById('satisfactionChart').getContext('2d');
+            const satisfactionChart = new Chart(satisfactionCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Very Satisfied', 'Satisfied', 'Neutral', 'Unsatisfied'],
+                    datasets: [{
+                        label: 'Customer Satisfaction',
+                        data: [60, 25, 10, 5],
+                        backgroundColor: [
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(255, 99, 132, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(255, 99, 132, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        }
+                    }
+                }
+            });
+        </script>
+    </div>
+</section>
+   </section>
+
+<section class="faq">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(this)">What services do you offer?</h3>
+            <p class="faq-answer" style="display:none;">We offer furniture transportation, electrical appliance delivery, vehicle transport, and long-distance transportation.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(this)">How do I book a service?</h3>
+            <p class="faq-answer" style="display:none;">You can book a service through our website by filling out the contact form or calling our customer service line.</p>
+        </div>
+    </div>
+</section>
+<section class="quote-request">
+    <div class="container">
+        <h2>Request a Quote</h2>
+        <form action="submit-quote.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="service">Service Required:</label>
+            <select id="service" name="service">
+                <option value="furniture-transport">Furniture Transport</option>
+                <option value="vehicle-transport">Vehicle Transport</option>
+                <option value="appliances-delivery">Appliances Delivery</option>
+                <option value="long-distance">Long-Distance Transport</option>
+            </select>
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<script>
+    function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    }
+</script>
+
+
+
+    <section class="customer-testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <blockquote>
+                <p>"Swift Shift made my moving process so easy! Their team was professional and efficient."</p>
+                <cite>- Client A</cite>
+            </blockquote>
+            <blockquote>
+                <p>"I highly recommend Swift Shift for any logistics needs. They are reliable and affordable."</p>
+                <cite>- Client B</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Great service and friendly staff. I felt my belongings were in safe hands!"</p>
+                <cite>- Client C</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Swift Shift has been our go-to for logistics. Their consistency is unmatched."</p>
+                <cite>- Client D</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="vehicles-gallery">
+        <div class="container">
+            <h2>Our Fleet</h2>
+            <div class="gallery">
+                <img src="Image1.jpg" alt="Car 1">
+                <img src="Image2.jpg" alt="Car 2">
+                <img src="Image3.jpeg" alt="Car 3">
+                <img src="Image4.jpg" alt="Car 4">
+                <img src="Image5.jpeg" alt="Car 5">
+                <img src="Image6.jpg" alt="Car 6">
+                <img src="Image7.jpg" alt="Car 7">
+                                <img src="Image4.jpg" alt="Car 4">
+                <img src="Image5.jpeg" alt="Car 5">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to inquire about our services, please reach out:</p>
+            <p><strong>Email:</strong> <a href="mailto:contact@swiftshift.com">contact@swiftshift.com</a></p>
+            <p><strong>Phone:</strong> +966 123 456 789</p>
+            <p><strong>Follow us on:</strong></p>
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/SwiftShift">Facebook</a></li>
+                <li><a href="https://www.twitter.com/SwiftShift">Twitter</a></li>
+                <li><a href="https://www.instagram.com/SwiftShift">Instagram</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Swift Shift Internal Logistics Company. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // More JavaScript or additional Chart.js analytics can be added here.
+    </script>
+</body>
+</html>
